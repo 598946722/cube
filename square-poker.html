@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扑克+方块</title>
+	<link rel="stylesheet" href="./css/index.css">
+		<style>
+		body{
+			height: 100%;
+			perspective: 900px;
+		}
+		.poker{
+			width: 180px;
+			height: 250px;
+			margin: 50px auto;
+			position: relative;
+		/* 	background: url('./images/poker.png'); */
+			transform-style: preserve-3d;
+			/* transition: all 2s linear 0s; */
+			
+			animation: poker 5s linear 0s infinite normal;
+		}
+		@keyframes poker{
+			0%{ transform: rotate(-50deg) }
+			50%{transform: rotate3d(0, 1,0, 180deg)rotate(-50deg) }
+			80%{transform: rotate3d(0, 1,0, 290deg)rotate(-50deg) }
+			100%{transform:rotate(-50deg) }
+		}
+		.a{
+			width: 100%;
+			height: 100%;
+			background: url('./images/poker.png');
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index:2;	
+			transform:translateZ(1px);
+		}
+		.b{
+			width: 100%;
+			height: 100%;
+			background: url('./images/poker.png')  right top;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 1;
+		}
+		.square{
+			width: 200px;
+			height: 200px;
+			transform-style: preserve-3d;
+			position: relative;
+			margin: 0px auto;
+/* 			transform: perspective(1000px); */
+			animation: square 5s linear 0s infinite normal;
+		}
+		.aa, .bb, .cc, .dd, .ee, .ff {
+					width: 200px;
+					height: 200px;	
+					text-align: center;
+					line-height: 200px;
+					color: #fff;
+					font-size: 100px;
+					position: absolute;
+					left: 0;
+					top: 0;
+					border: 1px solid #fff;
+		}
+		
+		.aa{
+			transform: translateZ(100px);
+			background: #deed63;
+		}
+		
+		.bb{
+			transform:rotateY(180deg) translateZ(100px);
+			background: purple;
+		}
+		
+		.cc{
+			transform: rotateY(90deg) translateZ(100px);
+			background: pink;
+		}
+		
+		.dd{
+			transform: rotateY(270deg) translateZ(100px);
+			background: gray;
+		}	
+		
+		.ee{
+			transform: rotateX(90deg) translateZ(100px);
+			background: #f1814f;			
+		}
+		
+		.ff{
+			transform: rotateX(270deg) translateZ(100px);
+			background: #009add;			
+		}		
+
+		@keyframes square{
+				0%{
+					transform: rotate3d(0, 1,1, 0deg)}
+				20%{transform: rotate3d(0, 1, 1,60deg);}
+				40%{transform: rotate3d(0, 1, 1,120deg)}
+				60%{transform: rotate3d(1, 1,1, 180deg)}
+				80%{transform: rotate3d(0, 1,1, 270deg)}
+				100%{transform: rotate3d(0, 1, 1,360deg)}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="poker">
+			<div class="a"></div>
+			<div class="b"></div>
+		</div>
+		<div class="square">
+			<div class="aa">1</div>
+			<div class="bb">6</div>
+			<div class="cc">5</div>
+			<div class="dd">2</div>
+			<div class="ee">4</div>
+			<div class="ff">3</div>
+		</div>
+	</body>
+</html>

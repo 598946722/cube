@@ -1,0 +1,889 @@
+body {
+    height: 100%;
+    /* perspective: 1000px; */
+    transform: perspective(1000px)scale(0.66);
+
+}
+
+.main {
+
+    width: 500px;
+    margin: 0px auto;
+    margin-top: 150px;
+    position: relative;
+    /* transform: rotate3d(2, 0.5,-1, 75deg); */
+   /*  transform: rotateX(68deg) rotateY(-4deg) rotateZ(-40deg); */
+    transform: rotateX(58deg) rotateY(0deg) rotateZ(-43deg);
+    transform-style: preserve-3d;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    position: absolute;
+    /* 			transform: perspective(1000px); */
+    /* animation: square 3s linear 0s infinite normal; */
+}
+
+.top,
+.left,
+.before {
+    width: 100%;
+    height: 100%;
+    /* 	position: absolute; */
+    left: 0;
+    top: 0;
+}
+
+.top {
+    transform: translate3d(0px, 100px, 50px);
+    background: #189398;
+}
+
+.left {
+    transform: rotateY(270deg) translateZ(50px);
+    background: #d53b33;
+}
+
+.before {
+    transform: rotateX(90deg) translateZ(50px);
+    background: #e79c0f;
+}
+
+.square:nth-child(1) {
+    position: absolute;
+    left: 20px;
+ 
+}
+
+.square:nth-child(2) {
+    position: absolute;
+    left: 120px;
+ 
+}
+
+.square:nth-child(3) {
+    position: absolute;
+    left: 220px;
+
+}
+
+.square:nth-child(4) {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+
+}
+
+.square:nth-child(5) {
+    position: absolute;
+    left: 120px;
+    top: 100px;
+
+}
+
+.square:nth-child(6) {
+    position: absolute;
+    left: 220px;
+    top: 100px;
+
+}
+
+.square:nth-child(7) {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+
+}
+
+.square:nth-child(8) {
+    position: absolute;
+    left: 120px;
+    top: 200px;
+
+}
+
+.square:nth-child(9) {
+    position: absolute;
+    left: 220px;
+    top: 200px;
+}
+
+.square:nth-child(10) {
+    position: absolute;
+    left: 20px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(11) {
+    position: absolute;
+    left: 120px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(12) {
+    position: absolute;
+    left: 220px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(13) {
+    position: absolute;
+    left: 20px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(14) {
+    position: absolute;
+    left: 120px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(15) {
+    position: absolute;
+    left: 220px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(16) {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(17) {
+    position: absolute;
+    left: 120px;
+    top: 100px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(18) {
+    position: absolute;
+    left: 220px;
+    top: 100px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(19) {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(20) {
+    position: absolute;
+    left: 120px;
+    top: 100px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(21) {
+    position: absolute;
+    left: 220px;
+    top: 100px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(22) {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(23) {
+    position: absolute;
+    left: 120px;
+    top: 200px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(24) {
+    position: absolute;
+    left: 220px;
+    top: 200px;
+    transform: translate3d(0, 0, -100px)
+}
+
+.square:nth-child(25) {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(26) {
+    position: absolute;
+    left: 120px;
+    top: 200px;
+    transform: translate3d(0, 0, -200px)
+}
+
+.square:nth-child(27) {
+    position: absolute;
+    left: 220px;
+    top: 200px;
+    transform: translate3d(0, 0, -200px)
+}
+
+
+/*animation*/
+
+ .square:nth-child(1) {
+    animation: square1 3s linear 0s infinite normal;
+}
+
+@keyframes square1 {
+    0% {}
+    15% {
+        transform: translateY(-100px)
+    }
+    30% {
+        transform: translate(-100px, -100px)
+    }
+    45% {
+        transform: translate3d(-100px, -100px, 100px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {}
+}
+
+.square:nth-child(10) {
+    animation: square10 3s linear 0s infinite normal;
+}
+
+@keyframes square10 {
+    0% {}
+    15% {
+        transform: translate3d(0, -100px, -100px)
+    }
+    30% {
+        transform: translate3d(-100px, -100px, -100px)
+    }
+    45% {
+        transform: translate3d(-100px, -100px, -100px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, -100px)
+    }
+    75% {
+        transform: translate3d(0, 0, -100px)
+    }
+    100% {}
+}
+
+.square:nth-child(13) {
+    animation: square13 3s linear 0s infinite normal;
+}
+
+@keyframes square13 {
+    0% {}
+    15% {
+        transform: translate3d(0, -100px, -200px)
+    }
+    30% {
+        transform: translate3d(-100px, -100px, -200px)
+    }
+    45% {
+        transform: translate3d(-100px, -100px, -300px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {}
+}
+
+.square:nth-child(2) {
+    animation: square2 3s linear 0s infinite normal;
+}
+
+@keyframes square2 {
+    0% {}
+    15% {
+        transform: translateY(-100px)
+    }
+    30% {
+        transform: translate(0px, -100px)
+    }
+    45% {
+        transform: translate3d(0px, -100px, 100px)
+    }
+    60% {
+        transform: translate3d(0px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {}
+}
+
+.square:nth-child(11) {
+    animation: square11 3s linear 0s infinite normal;
+}
+
+@keyframes square11 {
+    0% {}
+    15% {
+        transform: translate3d(0, -100px, -100px)
+    }
+    30% {
+        transform: translate3d(0px, -100px, -100px)
+    }
+    45% {
+        transform: translate3d(0px, -100px, -100px)
+    }
+    60% {
+        transform: translate3d(0px, 0px, -100px)
+    }
+    75% {
+        transform: translate3d(0, 0, -100px)
+    }
+    100% {}
+}
+
+.square:nth-child(14) {
+    animation: square14 3s linear 0s infinite normal;
+}
+
+@keyframes square14 {
+    0% {}
+    15% {
+        transform: translate3d(0, -100px, -200px)
+    }
+    30% {
+        transform: translate3d(0px, -100px, -200px)
+    }
+    45% {
+        transform: translate3d(0px, -100px, -300px)
+    }
+    60% {
+        transform: translate3d(0px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {}
+}
+
+.square:nth-child(3) {
+    animation: square3 3s linear 0s infinite normal;
+}
+
+@keyframes square3 {
+    0% {}
+    15% {
+        transform: translateY(-100px)
+    }
+    30% {
+        transform: translate(100px, -100px)
+    }
+    45% {
+        transform: translate3d(100px, -100px, 100px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {}
+}
+
+.square:nth-child(12) {
+    animation: square12 3s linear 0s infinite normal;
+}
+
+@keyframes square12 {
+    0% {}
+    15% {
+        transform: translate3d(0,-100px,-100px)
+    }
+    30% {
+        transform: translate3d(100px, -100px,-100px)
+    }
+    45% {
+        transform: translate3d(100px, -100px, -100px)
+    }
+    60% {
+        transform: translate3d(100px, 0px,-100px)
+    }
+    75% {
+        transform: translate3d(0, 0, -100px)
+    }
+    100% {}
+}
+
+.square:nth-child(15) {
+    animation: square15 3s linear 0s infinite normal;
+}
+
+@keyframes square15 {
+    0% {}
+    15% {
+        transform: translate3d(0,-100px,-200px)
+    }
+    30% {
+        transform: translate3d(100px, -100px, -200px)
+    }
+    45% {
+        transform: translate3d(100px, -100px, -300px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {}
+}
+
+.square:nth-child(4) {
+    animation: square4 3s linear 0s infinite normal;
+}
+
+@keyframes square4 {
+    0% {}
+    15% {
+        transform: translateY(0px)
+    }
+    30% {
+        transform: translate(-100px, 0px)
+    }
+    45% {
+        transform: translate3d(-100px, 0px, 100px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(16) {
+    animation: square16 3s linear 0s infinite normal;
+}
+
+@keyframes square16 {
+    0% {}
+    15% {
+        transform: translate3d(0,0,-100px)
+    }
+    30% {
+        transform: translate3d(-100px, 0px,-100px)
+    }
+    45% {
+        transform: translate3d(-100px, 0px, -100px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, -100px)
+    }
+    75% {
+        transform: translate3d(0, 0, -100px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(19) {
+    animation: square19 3s linear 0s infinite normal;
+}
+
+@keyframes square19 {
+    0% {}
+    15% {
+        transform: translate3d(0,0,-200px)
+    }
+    30% {
+        transform: translate3d(-100px, 0px, -200px)
+    }
+    45% {
+        transform: translate3d(-100px, 0px, -300px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(5) {
+    animation: square5 3s linear 0s infinite normal;
+}
+
+@keyframes square5 {
+    0% {}
+    15% {
+        transform: translateY(0px)
+    }
+    30% {
+        transform: translate(0px)
+    }
+    45% {
+        transform: translate3d(0px, 0px, 100px)
+    }
+    60% {
+        transform: translate3d(0px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {
+       
+    }
+}
+.square:nth-child(20) {
+    animation: square20 3s linear 0s infinite normal;
+}
+
+@keyframes square20 {
+    0% {}
+    15% {
+        transform: translate3d(0px, 0, -200px)
+    }
+    30% {
+        transform: translate3d(0px, 0, -200px)
+    }
+    45% {
+        transform: translate3d(0px, 0px, -300px)
+    }
+    60% {
+        transform: translate3d(0px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(17) {
+    animation: square17 3s linear 0s infinite normal;
+}
+
+@keyframes square17 {
+    0% {}
+    100% {
+        transform: translate3d(0, 0, -100px)
+    }
+}
+
+.square:nth-child(6) {
+    animation: square6 3s linear 0s infinite normal;
+}
+
+@keyframes square6 {
+    0% {}
+    15% {
+        transform: translateY(0px)
+    }
+    30% {
+        transform: translate(100px, 0px)
+    }
+    45% {
+        transform: translate3d(100px, 0px, 100px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(18) {
+    animation: square18 3s linear 0s infinite normal;
+}
+
+@keyframes square18 {
+    0% {}
+    15% {
+        transform: translate3d(0,0,-100px)
+    }
+    30% {
+        transform: translate3d(100px, 0px,-100px)
+    }
+    45% {
+        transform: translate3d(100px, 0px, -100px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, -100px)
+    }
+    75% {
+        transform: translate3d(0, 0, -100px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(21) {
+    animation: square21 3s linear 0s infinite normal;
+}
+
+@keyframes square21 {
+    0% {}
+    15% {
+        transform: translate3d(0px, 0, -200px)
+    }
+    30% {
+        transform: translate3d(100px, 0px, -200px)
+    }
+    45% {
+        transform: translate3d(100px, 0px, -300px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(7) {
+    animation: square7 3s linear 0s infinite normal;
+}
+
+@keyframes square7 {
+    0% {}
+    15% {
+        transform: translateY(100px)
+    }
+    30% {
+        transform: translate(-100px, 100px)
+    }
+    45% {
+        transform: translate3d(-100px, 100px, 100px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(22) {
+    animation: square22 3s linear 0s infinite normal;
+}
+
+@keyframes square22 {
+    0% {}
+    15% {
+        transform: translate3d(0,100px,-100px)
+    }
+    30% {
+        transform: translate3d(-100px, 100px,-100px)
+    }
+    45% {
+        transform: translate3d(-100px, 100px, -100px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, -100px)
+    }
+    75% {
+        transform: translate3d(0, 0, -100px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(25) {
+    animation: square25 3s linear 0s infinite normal;
+}
+
+@keyframes square25 {
+    0% {}
+    15% {
+        transform: translate3d(0, 100px, -200px)
+    }
+    30% {
+        transform: translate3d(-100px, 100px, -200px)
+    }
+    45% {
+        transform: translate3d(-100px, 100px, -300px)
+    }
+    60% {
+        transform: translate3d(-100px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {
+       
+    }
+}
+
+.square:nth-child(8) {
+    animation: square8 3s linear 0s infinite normal;
+}
+
+@keyframes square8 {
+    0% {}
+    15% {
+        transform: translateY(100px)
+    }
+    30% {
+        transform: translate(0, 100px)
+    }
+    45% {
+        transform: translate3d(0, 100px, 100px)
+    }
+    60% {
+        transform: translate3d(0, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {}
+}
+
+.square:nth-child(23) {
+    animation: square23 3s linear 0s infinite normal;
+}
+
+@keyframes square23 {
+    0% {}
+    15% {
+        transform: translate3d(0,100px,-100px)
+    }
+
+    45% {
+        transform: translate3d(0, 100px,-100px)
+    }
+    60% {
+        transform: translate3d(0, 0px,-100px)
+    }
+    75% {
+        transform: translate3d(0, 0,-100px)
+    }
+    100% {}
+}
+
+.square:nth-child(26) {
+    animation: square26 3s linear 0s infinite normal;
+}
+
+@keyframes square26 {
+    0% {}
+    15% {
+        transform: translate3d(0, 100px, -200px)
+    }
+    
+    30% {
+        transform: translate3d(0, 100px, -200px)
+    }
+    45% {
+        transform: translate3d(0, 100px, -300px)
+    }
+    60% {
+        transform: translate3d(0, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {}
+}
+
+.square:nth-child(9) {
+    animation: square9 3s linear 0s infinite normal;
+}
+
+@keyframes square9 {
+    0% {}
+    15% {
+        transform: translateY(100px)
+    }
+    30% {
+        transform: translate(100px, 100px)
+    }
+    45% {
+        transform: translate3d(100px, 100px, 100px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, 100px)
+    }
+    75% {
+        transform: translate3d(0, 0, 100px)
+    }
+    100% {}
+}
+
+.square:nth-child(24) {
+    animation: square24 3s linear 0s infinite normal;
+}
+
+@keyframes square24 {
+    0% {}
+    15% {
+        transform: translate3d(0,100px,-100px)
+    }
+    30% {
+        transform: translate3d(100px, 100px,-100px)
+    }
+    45% {
+        transform: translate3d(100px, 100px, -100px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, -100px)
+    }
+    75% {
+        transform: translate3d(0, 0, -100px)
+    }
+    100% {}
+}
+
+.square:nth-child(27) {
+    animation: square27 3s linear 0s infinite normal;
+}
+
+@keyframes square27 {
+    0% {}
+    15% {
+        transform: translate3d(0, 100px, -200px)
+    }
+    30% {
+        transform: translate3d(100px, 100px, -200px)
+    }
+    45% {
+        transform: translate3d(100px, 100px, -300px)
+    }
+    60% {
+        transform: translate3d(100px, 0px, -300px)
+    }
+    75% {
+        transform: translate3d(0, 0, -300px)
+    }
+    100% {}
+}
